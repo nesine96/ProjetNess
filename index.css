@@ -1,3 +1,15 @@
 body {
     background-color: #1d2844;
 }
+img{
+height: 100%;
+max-width: 100%;	
+}
+
+https://i.postimg.cc/4xLzNDvv/logo.png{
+	height: 50px;
+	width: 70px;
+	position: fixed;
+	bottom: 10px;
+	right: 0;
+}
