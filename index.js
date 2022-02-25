@@ -8,3 +8,18 @@ $.get("./getProfil.php?name=senbonzakura38")
 	console.log(profil);
 	console.log(profil.name);
 });
+/*
+$.get("./getProfil.php?name=senbonzakura38")
+.done( function(data){
+	summonerLevel = jQuery.parseJSON(data);
+	$( "#senbonzakura38" ).text(profil.name );
+	$("#icon").attr("src", "NEJd0YVo0J_eiTWCIrt413_ufSg_4bpQC-OkPjZgPUjqw60"+profil.profileIconId+".png");
+
+	//<if ("#icon ="ddragon.png.") {src ddragon.png};
+	console.log(profil);
+	console.log(profil.name);
+});*/
+$("#bouton").click (function (argument){
+	pseudo= $("#name").val();
+	console.log("pseudo:"+pseudo);
+});
