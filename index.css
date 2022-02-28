@@ -2,14 +2,8 @@ body {
     background-color: #1d28442e;
 }
 
-img{
-height: 100 %;
-max-width: 100 %;	
-}
-logo.png{
-	height: 20 px;
-	width: 20 px;
-	position: fixed;
-	bottom: 10 px;
-	right: 0;
+img {
+
+width : 200px;
+height : 150px;
 }
