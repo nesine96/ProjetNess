@@ -1,13 +1,15 @@
-$.get("./getProfil.php?name=senbonzakura38")
-.done( function(data){
-	profil = jQuery.parseJSON(data);
-	$( "#ddragon" ).text(profil.name );
-	$("#icon").attr("src", "https://ddragon.leagueoflegends.com/cdn/12.4.1/img/profileicon/"+profil.profileIconId+".png");
-
-	//<if ("#icon ="ddragon.png.") {src ddragon.png};
-	console.log(profil);
-	console.log(profil.name);
-});
+pseudo = "technet";
+function  profil (){
+	$.get("./getProfil.php?name="+pseudo).done( function(data){
+		profil = jQuery.parseJSON(data);
+		$( "#ddragon" ).text(profil.name );
+		$("#icon").attr("src", "https://ddragon.leagueoflegends.com/cdn/12.4.1/img/profileicon/"+profil.profileIconId+".png");
+	
+		//<if ("#icon ="ddragon.png.") {src ddragon.png};
+		console.log(profil);
+		console.log(profil.name);
+	});
+};
 /*
 $.get("./getProfil.php?name=senbonzakura38")
 .done( function(data){
@@ -22,4 +24,5 @@ $.get("./getProfil.php?name=senbonzakura38")
 $("#bouton").click (function (argument){
 	pseudo= $("#name").val();
 	console.log("pseudo:"+pseudo);
+	profil();
 });
